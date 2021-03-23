@@ -1,0 +1,1217 @@
+ <style>
+
+            * {
+            box-sizing: border-box;
+            } 
+            .mt-3, .my-3 {
+            margin-top: 1rem!important;
+            }
+            
+            .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            }
+            .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 0.5rem;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.2;
+            color: inherit;
+            }
+            .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            }
+            .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            }
+            .custom-col-6 {
+            position: relative;
+            width: 50%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            }
+            .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            }
+            .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+            }
+            .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            }
+            .btn-secondary {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+            }
+            .btn-success {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+            }
+            .form-control {
+            display: block;
+            width: 100%;
+            padding:0.2rem;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            }
+            .form-check {
+            position: relative;
+            display: block;
+            padding-left: 1.25rem;
+            }
+            input[type=checkbox], input[type=radio] {
+            box-sizing: border-box;
+            padding: 0;
+            }
+            .form-check-input {
+            margin-top: .3rem;
+            margin-left: -1.25rem;
+            }
+            .form-check-label {
+            margin-bottom: 0;
+            }
+            label {
+            display: inline-block;
+            margin-bottom: .5rem;
+            }
+            
+            .list-group {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            }
+            .modal-header .close {
+                padding:0px;
+                margin:-45px 0px;
+            }
+            .close {
+                float: right;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 1;
+                color: #000;
+                text-shadow: 0 1px 0 #fff;
+                opacity: .5;
+            }
+            dl, ol, ul {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            }
+            .list-group-item:last-child {
+            margin-bottom: 0;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+            }
+            .list-group-item:first-child {
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            }
+            .list-group-item {
+            position: relative;
+            display: block;
+            padding: 2px;
+            margin-bottom: -1px;
+            background-color:#ced4da;
+            border: 1px solid rgba(0,0,0,.125);
+            }
+            .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+            }
+            table {
+            border-collapse: collapse;
+            }
+            .table td, .table th {
+            padding: .2rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+            }
+            .sp-title {
+            display: block;
+            font-size: 25px;
+            font-weight: 600;
+            }
+            .sp-title1{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .sp-value1{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .sp-value {
+            font-size: 25px;
+            font-weight: 600;
+            vertical-align: middle;
+            }
+            
+            @media (min-width: 576px){
+            .container {
+            max-width: 540px;
+            }
+            }
+            @media (min-width: 768px){
+            .container {
+            max-width: 720px;
+            }
+            .modal-header .close {
+            margin: -3rem ​-1rem -1rem auto;
+            }
+            .col-md-4 {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            }
+            .custom-col-6 {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            }
+            }
+            @media (min-width: 992px){
+            .container {
+            max-width: 960px;
+            }
+            }
+            @media (min-width: 1200px){
+            .container {
+            max-width: 1140px;
+            }
+            }
+            .modal {
+                display: none; 
+                position:fixed; 
+                z-index: 1; 
+                padding-top: 100px; 
+                left: 0;
+                top: 0;
+                width: 100%; 
+                height:100%; 
+                overflow: auto;
+            }
+            .modal-content {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                border: 1px solid #888;
+                width:80% !important;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                -webkit-animation-name: animatetop;
+                -webkit-animation-duration: 0.4s;
+                animation-name: animatetop;
+                animation-duration: 0.4s
+            }
+            
+            @-webkit-keyframes animatetop {
+                from {top:-300px; opacity:0} 
+                to {top:0; opacity:1}
+            }
+            
+            @keyframes animatetop {
+                from {top:-300px; opacity:0}
+                to {top:0; opacity:1}
+            }
+            
+            .close {
+                color: white;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            .modal-header {
+                padding: 2px 16px;
+                background-color:#073507;
+                color: white;
+            }
+            
+            .modal-body {padding: 2px 16px;}
+            
+            .modal-footer {
+                padding: 2px 16px;
+                background-color:#073507;
+                color: white;
+            }
+            button{
+                width: 100%;
+                height:50px;
+                padding: auto;
+            
+            }
+            
+            
+            /* ----------Print css-------------*/
+            #print-div .card-deck {
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+            #print-div .card-deck .card {
+                margin-bottom: 15px;
+            }
+            #print-div .card {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                border-radius: .25rem;
+            }
+            #print-div .card-body {
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                padding: 1.25rem;
+            }
+            #print-div .card-title {
+                margin-bottom: .75rem;
+            }
+            
+            #print-div .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: nowrap;
+                margin-right: -15px;
+                margin-left: -15px;
+                flex-direction: row;
+            }
+            .border-bottom{
+                border-bottom: 2px solid black;
+            }
+            #print-div .sp-div{
+                position: relative;
+                width: 378px;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            #btn3{
+            float: right;
+            width: 100px;
+            color: white;
+            font-size: 20px;
+            transition-duration: 0.4s;
+            padding: 14px 24px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            cursor: pointer;
+            background-color:#0F5257;
+            }
+            #btn3:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            
+            }
+
+            #print-div{
+            display:none;
+            }
+            @media print{
+            #not_print{
+                display: none;
+            }
+            #print-div{
+                display: block;
+            }
+            }
+        </style>
+        <div id="not_print" class="container mt-3">
+        
+                <h1 style="text-align: center;"> <b>Uptown Laser Sales Calculator</b></h1>
+                <div id="myModal" class="modal">
+        
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 id="modal_title">Select one or More</h2>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <label for="validationDefault02" style="display: block;" class="mt-3">
+                                <b>Body Areas</b>
+                            </label>
+                            <div class="row">
+                                <div class="custom-col-6 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_1" value="1416"
+                                            data-name="La">
+                                        <label class="form-check-label" for="check_1">
+                                            La
+                                        </label>
+                                    </div>
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_2" value="1416"
+                                            data-name="Areola">
+                                        <label class="form-check-label" for="check_2">
+                                            Areola
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_3" value="1416"
+                                            data-name="Glabella">
+                                        <label class="form-check-label" for="check_3">
+                                            Glabella
+                                        </label>
+                                    </div>
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_4" value="1416"
+                                            data-name="Toes">
+                                        <label class="form-check-label" for="check_4">
+                                            Toes
+                                        </label>
+                                    </div>
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_5" value="1416"
+                                            data-name="Ears">
+                                        <label class="form-check-label" for="check_5">
+                                            Ears
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_6" value="1416"
+                                            data-name="Nose">
+                                        <label class="form-check-label" for="check_6">
+                                            Nose
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_7" value="2128"
+                                            data-name="1 Facial Area">
+                                        <label class="form-check-label" for="check_7">
+                                            1 Facial Area
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_8" value="2128"
+                                            data-name="UA">
+                                        <label class="form-check-label" for="check_8">
+                                            UA
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_9" value="2128"
+                                            data-name="PA">
+                                        <label class="form-check-label" for="check_9">
+                                            PA
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_10" value="2128"
+                                            data-name="IT">
+                                        <label class="form-check-label" for="check_10">
+                                            IT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_11" value="2128"
+                                            data-name="Back Patch">
+                                        <label class="form-check-label" for="check_11">
+                                            Back Patch
+                                        </label>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="custom-col-6 mb-3">
+        
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_12" value="3544"
+                                            data-name="2 facial areas">
+                                        <label class="form-check-label" for="check_12">
+                                            2 facial areas
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_13" value="3544"
+                                            data-name="PA extended">
+                                        <label class="form-check-label" for="check_13">
+                                            PA extended
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_14" value="3544"
+                                            data-name="IT extended">
+                                        <label class="form-check-label" for="check_14">
+                                            IT extended
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_15" value="5328"
+                                            data-name="3 facial areas">
+                                        <label class="form-check-label" for="check_15">
+                                            3 facial areas
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_16" value="5328"
+                                            data-name="chest">
+                                        <label class="form-check-label" for="check_16">
+                                            chest
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_17" value="5328"
+                                            data-name="abd">
+                                        <label class="form-check-label" for="check_17">
+                                            abd
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_18" value="5328"
+                                            data-name="shoulders">
+                                        <label class="form-check-label" for="check_18">
+                                            shoulders
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_19" value="5328"
+                                            data-name="half arms">
+                                        <label class="form-check-label" for="check_19">
+                                            half arms
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_20" value="5328"
+                                            data-name="buttocks">
+                                        <label class="form-check-label" for="check_20">
+                                            buttocks
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_21" value="7104"
+                                            data-name="Full Face">
+                                        <label class="form-check-label" for="check_21">
+                                            Full Face
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_22" value="7104"
+                                            data-name="Bikini/PA">
+                                        <label class="form-check-label" for="check_22">
+                                            Bikini/PA
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="custom-col-6 mb-3">
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_23" value="7104"
+                                            data-name="Half legs/feet">
+                                        <label class="form-check-label" for="check_23">
+                                            Half legs/feet
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_24" value="7104"
+                                            data-name="Full arms/hands">
+                                        <label class="form-check-label" for="check_24">
+                                            Full arms/hands
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_25" value="7104"
+                                            data-name="Braz/PA">
+                                        <label class="form-check-label" for="check_25">
+                                            Braz/PA
+                                        </label>
+                                    </div>
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_26" value="8880"
+                                            data-name="Half legs/UA">
+                                        <label class="form-check-label" for="check_26">
+                                            Half legs/UA
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_27" value="8880"
+                                            data-name="Bikini/UA">
+                                        <label class="form-check-label" for="check_27">
+                                            Bikini/UA
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_28" value="8880"
+                                            data-name="Full Legs">
+                                        <label class="form-check-label" for="check_28">
+                                            Full Legs
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_29" value="8880"
+                                            data-name="Full Back or chest/Abs">
+                                        <label class="form-check-label" for="check_29">
+                                            Full Back or chest/Abs
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_30" value="10656"
+                                            data-name="Full Legs/UA">
+                                        <label class="form-check-label" for="check_30">
+                                            Full Legs/UA
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_31" value="10656"
+                                            data-name="Back/Shoulders">
+                                        <label class="form-check-label" for="check_31">
+                                            Back/Shoulders
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check_32" value="10656"
+                                            data-name="BON">
+                                        <label class="form-check-label" for="check_32">
+                                            BON
+                                        </label>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="modal-footer">
+                            <h3>Uptown Laser Calculator</h3>
+                        </div>
+                    </div>
+        
+                </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" id="myBtn">Option 1</button>
+                    <ul class="list-group option_one_list">
+                        <li class="list-group-item">Nothing selected!</li>
+                    </ul>
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <td>Retail</td>
+                            <td class="rs_one_1">0</td>
+                        </tr>
+                        <tr>
+                            <td>Discount(%)</td>
+                            <td><input type="number" class="form-control" id="dis_one" value="0" /></td>
+                        </tr>
+                        <tr>
+                            <td>Savings</td>
+                            <td class="rs_one_2">0</td>
+                        </tr>
+                        <tr>
+                            <td>Final Total</td>
+                            <td class="rs_one_3">0</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                Waive $250 Lifetime Membership*<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="sp-title1">10% Downpayment</td>
+                            <td class="sp-value1 rs_one_33">0</td>
+                        </tr>
+                        <tr>
+                            <td style="border-top: none;">
+                                <span class="sp-title">Monthly Payment</span> (0% for  16 months)
+                            </td>
+                            <td class="sp-value rs_one_4" style="border-top: none;">0</td>
+                        </tr>
+                        <tr>
+                            <td>PIF Price (10%)</td>
+                            <td class="rs_one_5">0</td>
+                        </tr>
+                    </table>
+        
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-secondary" id="myBtn1">Option 2</button>
+                    <ul class="list-group option_two_list">
+                        <li class="list-group-item">Nothing selected!</li>
+                    </ul>
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <td>Retail</td>
+                            <td class="rs_two_1">0</td>
+                        </tr>
+                        <tr>
+                            <td>Discount(%)</td>
+                            <td><input type="number" class="form-control" id="dis_two" value="0" /></td>
+                        </tr>
+                        <tr>
+                            <td>Savings</td>
+                            <td class="rs_two_2">0</td>
+                        </tr>
+                        <tr>
+                            <td>Sub Total</td>
+                            <td class="rs_two_3">0</td>
+                        </tr>
+                        <tr>
+                            <td>Cash Discount:</td>
+                            <td><input type="number" class="form-control" id="dis_two_amount" value="0" /></td>
+                        </tr>
+                        <tr>
+                            <td>Total Less Cash Discount</td>
+                            <td class="rs_two_4">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Waive $250 Lifetime Membership*<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="sp-title1">10% Downpayment</td>
+                            <td class="sp-value1 rs_two_44">0</td>
+                        </tr>
+                        <tr>
+                            <td style="border-top: none;">
+                                <span class="sp-title">Monthly Payment</span> (0% for  16 months)
+                            </td>
+                            <td class="sp-value rs_two_5" style="border-top: none;">0</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>PIF Price (10%)</td>
+                            <td class="rs_two_6">0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success" id="myBtn2">Option 3</button>
+                    <ul class="list-group option_three_list">
+                        <li class="list-group-item">Nothing selected!</li>
+                    </ul>
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <td>Retail</td>
+                            <td class="rs_three_1">0</td>
+                        </tr>
+                        <tr>
+                            <td>Discount(%)</td>
+                            <td><input type="number" class="form-control" id="dis_three" value="0" /></td>
+                        </tr>
+                        <tr>
+                            <td>Savings</td>
+                            <td class="rs_three_2">0</td>
+                        </tr>
+                        <tr>
+                            <td>Sub Total</td>
+                            <td class="rs_three_3">0</td>
+                        </tr>
+                        <tr>
+                            <td>Cash Discount:</td>
+                            <td><input type="number" class="form-control" id="dis_three_amount" value="0" /></td>
+                        </tr>
+                        <tr>
+                            <td>Total Less Cash Discount</td>
+                            <td class="rs_three_4">0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Waive $250 Lifetime Membership*<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="sp-title1">10% Downpayment</td>
+                            <td class="sp-value1 rs_three_44">0</td>
+                        </tr>
+                        <tr>
+                            <td style="border-top: none;">
+                                <span class="sp-title">Monthly Payment</span> (0% for  16 months )
+                            </td>
+                            <td class="sp-value rs_three_5" style="border-top: none;">0</td>
+                        </tr>
+                        <tr>
+                            <td>PIF Price (10%)</td>
+                            <td class="rs_three_6">0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="form-check-input" id="btn3" value="print" >Print</button>
+                </div>
+            </div>
+        
+        </div>
+        <div id="print-div" class="container mt-3">
+            <div class="row">
+                <div class="sp-div">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-title optn">Option 1</p>
+                                <ul class="list-group option_one_list">
+                                    <li class="list-group-item">Nothing selected!</li>
+                                </ul>
+                                <br>
+                                <div class="monthly">
+                                    <p class="card-text">Waive $250 Lifetime Membership*</p>
+                                    <p class="card-text mp">Monthly Payment:<span class="rs_one_4"> 0 </span></p>
+                                    <p class="card-text">(0% for 16 months)</p>
+        
+                                </div>
+                                <br>
+                                <table class="table">
+        
+                                    <tr>
+                                        <td>Retail Cost</td>
+                                        <td class="rs_one_1">0</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td>-Your savings</td>
+                                        <td class="rs_one_2">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td class="rs_one_3">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="sp-title1">10% Downpayment</td>
+                                        <td class="sp-value1 rs_one_33">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paid in Full Price<br>(10%)</td>
+                                        <td class="rs_one_5">0</td>
+                                    </tr>
+        
+                                </table>
+                                <br>
+                                <div class="paid">
+                                    <br>
+                                    <p class="card-text">*Waived with Same day Purchase </p>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <div class="sp-div">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-title optn">Option 2</p>
+                                <ul class="list-group option_two_list">
+                                    <li class="list-group-item">Nothing selected!</li>
+                                </ul>
+                                <br>
+                                <div class="monthly">
+                                    <p class="card-text">Waive $250 Lifetime Membership*</p>
+                                    <p class="card-text mp">Monthly Payment:<span class="rs_two_5"> 0 </span></p>
+                                    <p class="card-text">(0% for 16 months)</p>
+        
+                                </div>
+                                <br>
+                                <table class="table">
+        
+                                    <tr>
+                                        <td>Retail Cost</td>
+                                        <td class="rs_two_1">0</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td>-Your savings</td>
+                                        <td id="rs_two_sv">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td class="rs_two_4">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="sp-title1">10% Downpayment</td>
+                                        <td class="sp-value1 rs_two_44">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paid in Full Price<br>(10%)</td>
+                                        <td class="rs_two_6">0</td>
+                                    </tr>
+        
+                                </table>
+                                <br>
+                                <div class="paid">
+                                    <br>
+                                    <p class="card-text">*Waived with Same day Purchase </p>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="sp-div">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-title optn">Option 3</p>
+                                <ul class="list-group option_three_list">
+                                    <li class="list-group-item">Nothing selected!</li>
+                                </ul>
+                                <br>
+                                <div class="monthly">
+                                    <p class="card-text">Waive $250 Lifetime Membership*</p>
+                                    <p class="card-text mp">Monthly Payment:<span class="rs_three_5"> 0 </span></p>
+                                    <p class="card-text">(0% for 16 months)</p>
+        
+                                </div>
+                                <br>
+                                <table class="table">
+        
+                                    <tr>
+                                        <td>Retail Cost</td>
+                                        <td class="rs_three_1">0</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td>-Your savings</td>
+                                        <td id="rs_three_sv">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td class="rs_three_4">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="sp-title1">10% Downpayment</td>
+                                        <td class="sp-value1 rs_three_44">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paid in Full Price<br>(10%)</td>
+                                        <td class="rs_three_6">0</td>
+                                    </tr>
+        
+                                </table>
+                                <br>
+                                <div class="paid">
+                                    <br>
+                                    <p class="card-text">*Waived with Same day Purchase </p>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+        
+        </div>
+        <script>
+        jQuery(document).ready(function($){
+          
+            var modal = document.getElementById("myModal");
+        
+            var btn = document.getElementById("myBtn");
+            var btn1 = document.getElementById("myBtn1");
+            var btn2 = document.getElementById("myBtn2");
+            var span = document.getElementsByClassName("close")[0]; 
+        
+            let options_one_id = [];
+            let options_one_name = [];
+            let options_one_price = [];
+            let options_two_id = [];
+            let options_two_name = [];
+            let options_two_price = [];
+            let options_three_id = [];
+            let options_three_name = [];
+            let options_three_price = [];
+        
+            let retail_one = 0;
+            let retail_two = 0;
+            let retail_three = 0;
+        
+            let status = 0;
+        
+            const nftd = Intl.NumberFormat('en-US', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            });
+        
+            btn.onclick = function() {
+              modal.style.display = "block";
+              $("#modal_title").text("Select One or More For Option One");
+              status = 1;
+              $('.form-check-input').each(function(){
+                let id = $(this).attr('id');
+                if(options_one_id.includes(id)){
+                  $(this).prop('checked', true);
+                } else {
+                  $(this).prop('checked', false);
+                }
+        
+              });
+            }
+            btn1.onclick = function() {
+              modal.style.display = "block";
+              $("#modal_title").text("Select One or More For Option Two");
+              status = 2;
+              $('.form-check-input').each(function(){
+                  let id = $(this).attr('id');
+                  if(options_two_id.includes(id)){
+                    $(this).prop('checked', true);
+                  } else {
+                    $(this).prop('checked', false);
+                  }
+              });
+              
+            }
+            btn2.onclick = function() {
+              modal.style.display = "block";
+              $("#modal_title").text("Select One or More For Option Three");
+              status = 3;
+              $('.form-check-input').each(function(){
+                let id = $(this).attr('id');
+                if(options_three_id.includes(id)){
+                  $(this).prop('checked', true);
+                } else {
+                  $(this).prop('checked', false);
+                }
+              });
+              
+            }
+        
+            $('#dis_one').on('change keyup', function(){
+              calculationsOne();
+            });
+            $('#dis_two, #dis_two_amount').on('change keyup', function(){
+              calculationsTwo();
+            });
+            $('#dis_three, #dis_three_amount').on('change keyup', function(){
+              calculationsThree();
+            });
+        
+            $('.form-check-input').on('change', function(){
+              if(status === 1){
+                  options_one_id = [];
+        
+                  let i = 0;
+                  $('.form-check-input').each(function(){
+                    if($(this).is(':checked')){
+                      let id = $(this).attr('id');
+                      options_one_id[i] = $(this).attr('id');
+                      options_one_name[i] = $(this).attr('data-name');
+                      options_one_price[i] = Number($(this).val());
+                      i++;
+                    }
+        
+                  });
+                  let items1 = "";
+                  retail_one = 0;
+                  for(i = 0; i<options_one_id.length; i++){
+                    items1 = items1 + `<li class="list-group-item">${options_one_name[i]}</li>`;
+                    retail_one = retail_one + options_one_price[i];
+                  }
+        
+                  $('.option_one_list').html(items1);
+                  
+                  calculationsOne();
+        
+              } else if(status === 2){
+                options_two_id = [];
+                options_two_name = [];
+                options_two_price = [];
+        
+                let i = 0;
+                $('.form-check-input').each(function(){
+                  if($(this).is(':checked')){
+                    let id = $(this).attr('id');
+                    options_two_id[i] = $(this).attr('id');
+                    options_two_name[i] = $(this).attr('data-name');
+                    options_two_price[i] = Number($(this).val());
+                    i++;
+                  }
+                });
+        
+                let items2 = "";
+                retail_two = 0;
+                for(i = 0; i<options_two_id.length; i++){
+                  items2 = items2 + `<li class="list-group-item">${options_two_name[i]}</li>`;
+                  retail_two = retail_two + options_two_price[i];
+                } 
+        
+                $('.option_two_list').html(items2);
+        
+                calculationsTwo();
+        
+              } else if(status === 3){
+                options_three_id = [];
+                options_three_name = [];
+                options_three_price = [];
+        
+                let i = 0;
+                $('.form-check-input').each(function(){
+                  if($(this).is(':checked')){
+                    let id = $(this).attr('id');
+                    options_three_id[i] = $(this).attr('id');
+                    options_three_name[i] = $(this).attr('data-name');
+                    options_three_price[i] = Number($(this).val());
+                    i++;
+                  }
+                });
+                let items = "";
+                
+                retail_three = 0;
+                for(i = 0; i<options_three_id.length; i++){
+                  items = items + `<li class="list-group-item">${options_three_name[i]}</li>`;
+                  retail_three = retail_three + options_three_price[i];
+                }
+                $('.option_three_list').html(items);
+                calculationsThree();
+              }
+        
+        
+                
+            });
+        
+            function calculationsOne(){
+                  let dis = Number($('#dis_one').val());
+                  let sv = retail_one * (dis/100);
+                  let f_total = retail_one - sv;
+                  let d_payment = f_total*0.1;
+                  let moPayment =(f_total*0.9)/16;
+                  let pif =f_total*0.9;
+        
+                  $('.rs_one_1').text("$"+nftd.format(retail_one));
+                  $('.rs_one_2').text("$"+nftd.format(sv));
+                  $('.rs_one_3').text("$"+nftd.format(f_total));
+                  $('.rs_one_33').text("$"+nftd.format(d_payment));
+                  $('.rs_one_4').text("$"+nftd.format(moPayment));
+                  $('.rs_one_5').text("$"+nftd.format(pif));
+            }
+        
+            function calculationsTwo(){
+              let dis = Number($('#dis_two').val());
+              let dis_amount = Number($('#dis_two_amount').val());
+              let sv = retail_two * (dis/100);
+              let sub_total = retail_two - sv;
+              let f_total = sub_total - dis_amount;
+              let d_payment =f_total*0.1;
+              let moPayment =(f_total*0.9)/16;
+              let pif =f_total*0.9;
+        
+              $('.rs_two_1').text("$"+nftd.format(retail_two));
+              $('.rs_two_2').text("$"+nftd.format(sv));
+              $('#rs_two_sv').text("$"+nftd.format(sv+dis_amount));
+              $('.rs_two_3').text("$"+nftd.format(sub_total));
+              $('.rs_two_4').text("$"+nftd.format(f_total));
+              $('.rs_two_4').text("$"+nftd.format(f_total));
+              $('.rs_two_44').text("$"+nftd.format(d_payment));
+              $('.rs_two_5').text("$"+nftd.format(moPayment));
+              $('.rs_two_6').text("$"+nftd.format(pif));
+            }
+        
+            function calculationsThree(){
+              let dis = Number($('#dis_three').val());
+              let dis_amount = Number($('#dis_three_amount').val());
+              let sv = retail_three * (dis/100);
+              let sub_total = retail_three - sv;
+              let f_total = sub_total - dis_amount;
+              let d_payment = f_total*0.1;
+              let moPayment =(f_total*0.9)/16;
+              let pif =f_total*0.9;
+        
+              $('.rs_three_1').text("$"+nftd.format(retail_three));
+              $('.rs_three_2').text("$"+nftd.format(sv));
+              $('#rs_three_sv').text("$"+nftd.format(sv+dis_amount));
+              $('.rs_three_3').text("$"+nftd.format(sub_total));
+              $('.rs_three_4').text("$"+nftd.format(f_total));
+              $('.rs_three_44').text("$"+nftd.format(d_payment));
+              $('.rs_three_5').text("$"+nftd.format(moPayment));
+              $('.rs_three_6').text("$"+nftd.format(pif));
+            }
+        
+        
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        
+            function uncheckElements(check)
+            {
+            var uncheck=document.getElementsByTagName('input');
+            for(var i=0;i<uncheck.length;i++)
+            {
+              if(uncheck[i].type==check)
+              {
+              uncheck[i].checked=false;
+              }
+            }
+            }
+            $("#btn3").click(function(){
+              window.print();
+        
+                })
+        });
+        </script>      
